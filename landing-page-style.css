@@ -1,6 +1,145 @@
 body {
     height: 100vh;
     margin: 0;
+    padding: 0;
     overflow: hidden;
     font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
+    padding: 8px 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header-top {}
+
+.header-top li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-buttons {
+    align-items: flex;
+}
+
+.header-logo img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.header-wrapper,
+.second-layer-wrapper,
+.third-layer-wrapper,
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+.second-layer-title {
+    align-self: center;
+}
+
+.third-layer-wrapper {
+    flex-grow: 1;
+}
+
+.third-layer-content {
+    margin: auto;
+}
+
+.second-layer-wrapper,
+.footer-wrapper {
+    flex-shrink: 0;
+}
+
+.header-wrapper {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    border: 1px solid white;
+}
+
+.header-wrapper a {
+    color: #E5E7EB;
+    text-decoration: none;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+.header-wrapper p {
+    border: 1px solid white;
+}
+
+.header-wrapper button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+.header-body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-body-body {
+    max-width: 450px;
+}
+
+#awesome {
+    border: 1px solid white;
+    font-size: 48px;
+    font-weight: extra-bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.placeholder-image img {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.placeholder-image {
+    border: 1px solid white;
+}
+
+.third-layer-wrapper {
+    background-color: #E5E7EB;
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 15px;
+}
+
+.footer {
+    background-color: #3882F6;
+    border: 1px solid black;
+}
+
+.footer-wrapper {
+    background-color: white;
+    color: white;
+}
+
+.footer-wrapper button {
+    background-color: #3882F6;
+    color: white;
+    border: 2px solid white;
 }

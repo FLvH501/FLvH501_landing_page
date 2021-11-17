@@ -66,6 +66,13 @@ ul {
     margin: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+    .header-top {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .header-top li {
     display: flex;
     justify-content: space-evenly;
@@ -92,19 +99,26 @@ ul {
 }
 
 .header-logo {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 70px;
+    max-height: 70px;
 }
 
 .header-logo img {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 70px;
+    max-height: 70px;
 }
 
 .header-body {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 100px;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width 600px) {
+    .header-body {
+        flex-shrink: 0;
+    }
 }
 
 .header-body-body {
@@ -140,22 +154,39 @@ ul {
 
 .second-layer-title {
     align-self: center;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
+    gap: inherit;
 }
 
 .card {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 200px;
+    height: 250px;
+    border: solid 1px black;
+    overflow-wrap: break-word;
+    flex: 1;
 }
 
 .card img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: inherit;
+    max-height: inherit;
     border-radius: 15px;
     border: 2px solid #3882F6;
+}
+
+.card p {
+    overflow-wrap: break-word;
+    flex: 1;
 }
 
 .third-layer-wrapper {

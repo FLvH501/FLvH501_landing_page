@@ -172,7 +172,6 @@ ul {
     flex-wrap: wrap;
     max-width: 200px;
     height: 250px;
-    border: solid 1px black;
     overflow-wrap: break-word;
     flex: 1;
 }
@@ -182,6 +181,8 @@ ul {
     max-height: inherit;
     border-radius: 15px;
     border: 2px solid #3882F6;
+    font-size: 30px;
+    font-size: 3.5vw;
 }
 
 .card p {
@@ -231,4 +232,13 @@ ul {
     border: 2px solid white;
     padding: 3px;
     width: 90px
+}
+
+.odin-copyright {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 10px;
 }
